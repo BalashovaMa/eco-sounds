@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+	margin: 0;
+	border: 0;
+}
+*{
+  cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+   
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  color: #fff;
+  min-width: 320px;
+}
+.header {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.header_container {
+  display: flex;
+  position: relative;
+  padding: 10px 40px;
+  align-items: center;
+  min-height: 60px;
+}
+.active {
+  color: #BDAE82;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(./assets/svg/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header_nav {
+  display: block;
+  margin-left: auto;
+}
+.header_nav_ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0px;
+}
+.header_nav_li:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  transform: scale(1.2);
+}
+.main {
+    display: flex;
+    align-items: center;
+    background-image: url(./assets/img/forest.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 140px);
+    min-height: 280px;
+}
+.play-btn, .play {
+    background-image: url(./assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-color: transparent;
+    border: 0;  
+    transition: .3s;
+    margin: 0 auto;
+}
+
+.pause {
+    background-image: url(./assets/svg/pause.svg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-color: transparent;
+    border: 0;  
+    transition: .3s;
+}
+
+.play:hover {
+    transform: scale(1.5);
+  }
+.play-btn:hover {
+    transform: scale(1.5);
+  }
+.pause:hover {
+    transform: scale(1.5);
+}
+.footer_container {
+  display: flex;
+  position: relative;
+  padding: 10px 40px;
+  align-items: center;
+  min-height: 60px;
+}
+.git {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0px;
+}
+a:hover {
+  transform: scale(1.2);
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.rss {
+  margin-left: auto;
+  width: 135px;
+  height: 50px;
+  background-image: url(./assets/svg/rss.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
